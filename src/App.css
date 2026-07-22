@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+  padding-top: 60px 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+h2{
+  color: gray;
+}
+
+input {
+  width: 300px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff1f1f;
+  transform: scale(1.05);
+}
+.movie-card{
+  margin: 40px auto;
+  width: 350px;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+.movie-card img {
+  width: 250px;
+  border-radius: 15px;
+}
+
+.movie-card p {
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  input {
+    width: 90%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  button {
+    width: 95%;
+  }
+
+  .movie-card {
+    width: 90%;
+  }
+
+  .movie-card img {
+    width: 100%;
+  }
+
+}
