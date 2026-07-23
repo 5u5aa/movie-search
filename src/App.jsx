@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const[search, setSearch]=useState(" ");
+  const[search, setSearch]=useState("");
   const[movie, setMovie]=useState("");
   const [movieData, setMovieData] = useState(null);
   const apiKey = import.meta.env.VITE_OMDB_API_KEY;
@@ -19,13 +19,12 @@ function App() {
 
   return (
     <div className="container">
-      <h1>🎬 Movie Search</h1>
-
-      <input
+      <h1>Movie Search App</h1>
+      <input 
         type="text"
-        placeholder="Search for a movie..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+        placeholder="Type the name of the movie here..."
       />
 
       <button onClick={handleSearch}>Search</button>
