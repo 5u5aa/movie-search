@@ -36,9 +36,11 @@ input {
   margin: 20px 15px 20px 10px;
   font-size: 16px;
   background-color: rgb(255, 224, 224);
+  color: black;
 }
 
 input::placeholder{
+  font-size: 15px;
   color: rgb(255, 27, 27);
   opacity: 0.7;
 }
@@ -82,17 +84,17 @@ button:hover {
   h1 {
     font-size: 2.2rem;
   }
+
   input {
-    width: 90%;
+    width: 65%;
     margin-bottom: 15px;
     margin-right: 0;
   }
-  button {
-    width: 95%;
-  }
+
   .movie-card {
     width: 90%;
   }
+
   .movie-card img {
     width: 100%;
   }
